@@ -51,7 +51,7 @@ We are going to deploy an UploadObject function to upload a file to Google Objec
 The `UploadObject` class implements the `HttpFunction` interface to support deployment to Google Cloud Functions, and `RequestHandler<Request, HashMap<String, Object>>` for supporting deployment to AWS lambda. In this class, the method `handleRequest` is the handler method for AWS Lambda. The method `service` is the handler method for Google Cloud Functions.
 The `uploadObjectProcedure` method centralizes common code and logic for the UploadObject serverless function relevant to both clouds.
 
-Modify the variable`objectName`(line 40) in `UploadObject.java`.
+Modify the variable`objectName`(line 40) in `UploadObject.java`. change `UWNetID` with your UW NetID.
 ```java
 // following code is line 43-46, src/main/java/functions/UploadObjectGCP; Line 38-41, src/main/java/functionsUploadObjectAWS
 // PROVIDER is 'aws-s3' for AWS, "google-cloud-storage" for Google CLoud Platform;
